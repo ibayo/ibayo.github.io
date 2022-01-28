@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+header #logo {
+  font-size: 3em;
+  color: #fff;
+  background-color: #e2001a;
+  width: 67.56px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header #logo .f {
+  font-weight: bold;
+}
+header #logo .i {
+  font-weight: 1000;
+}
+.direct {
+  display: flex;
+  align-items: center;
+}
+.direct a,
+.direct .pipe {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.direct .pipe {
+  margin: 0 10px;
+}
+
+.direct .fa-play-circle {
+  color: #e2001a;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.direct a .monde,
+.direct a .afrique {
+  color: #e2001a;
+  text-transform: uppercase;
+}
+
+.menuBurger .fa-bars {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.separator {
+  height: 10em;
+  box-shadow: inset 0 0 30px #d4d4d4;
+}
+
+.menu {
+  position: fixed;
+  top: 85px;
+  width: 100%;
+  display: flex;
+  background-color: #e2001a;
+  color: #fff;
+  padding-left: 11.2em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.5;
+  font-weight: normal;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 15px;
+}
+
+.menu .fa-home {
+  margin-right: 15px;
+}
+
+.menu .cc a {
+  background-color: #fff;
+  color: #e2001a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+/* A la Une */
+
+.aLaUne {
+  position: relative;
+  top: 3em;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+
+.infoPrincipale {
+  position: relative;
+  width: 640px;
+  height: 350px;
+  cursor: pointer;
+}
+.infoPrincipale img {
+  width: 100%;
+  height: 100%;
+}
+.infoPrincipale h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.subInfo {
+  position: relative;
+  display: flex;
+  width: 640px;
+  justify-content: space-between;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+/* Banniere */
+.baniere {
+  position: relative;
+  width: 330px;
+  height: 680px;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.bannerHead {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+.listeBreves {
+  list-style: none;
+}
+.listeBreves li {
+  /* position: relative; */
+  display: flex;
+  margin-bottom: 15px;
+}
+.listeBreves li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.listeBreves li p span {
+  background-color: #e2001a;
+  color: #fff;
+  margin-right: 10px;
+  padding: 3px;
+}
+
+.leftBar {
+  position: absolute;
+  border-left: 1px solid #e2001a;
+  height: 550px;
+}
+.barTop {
+  border-top: 1px solid #e2001a;
+  width: 30px;
+}
+
+.aLaUne .suitActualite a {
+  position: absolute;
+  text-align: left;
+  color: #e2001a;
+  font-size: 0.8em;
+  text-decoration: none;
+  right: 30px;
+  bottom: 20px;
+}
+
+.vignette {
+  width: 300px;
+  height: 170px;
+  cursor: pointer;
+}
+.vignette img {
+  width: 100%;
+  height: 100%;
+}
+.titre-info {
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Can 2022 */
+
+.can2022 {
+  position: relative;
+  top: 3em;
+  background-color: rgb(230, 230, 230);
+}
+
+.can2022 .infoCan {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.can2022 .infoCan .CanInfoPrincipale {
+  margin-right: 50px;
+}
+
+.CanInfoPrincipale .titreInfoPrincipale a {
+  text-decoration: none;
+  font-size: 2.2em;
+  color: #000;
+  font-weight: bold;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.CanInfoPrincipale .titreInfoPrincipale {
+  margin: 15px auto;
+}
+
+.can2022 .infoCan .CanInfoPrincipale .vignetteInfoPrincipale {
+  width: 465px;
+  height: 260px;
+  cursor: pointer;
+}
+.can2022 .infoCan .CanInfoPrincipale .vignetteInfoPrincipale img {
+  width: 100%;
+  height: 100%;
+}
+.can2022 .infoCan .CanInfoPrincipale .titreInfoPrincipale {
+  width: 465px;
+}
+.canHead {
+  padding: 30px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.canInfo1 {
+  position: relative;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.canInfo1 .CanVignette {
+  position: relative;
+  width: 200px;
+  height: 110px;
+  cursor: pointer;
+}
+.canInfo1 .CanVignette img {
+  width: 100%;
+  height: 100%;
+}
+
+.canInfo1 .canTitre {
+  position: relative;
+  left: 20px;
+  width: 260px;
+  cursor: pointer;
+}
+.canInfo1 .canTitre p span {
+  text-transform: uppercase;
+  background-color: #e2001a;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 3px;
+  cursor: pointer;
+}
+.canInfo1 .canTitre p {
+  margin-bottom: 10px;
+}
+
+/* Reportage */
+.reportage {
+  position: relative;
+  top: 3em;
+}
+
+.reportage .contenuReportage {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.reportage .contenuReportage .reportage1 .vignetteReportage {
+  /* position: absolute; */
+  width: 305px;
+  height: 170px;
+}
+.reportage .contenuReportage .reportage1 .titreReportage {
+  width: 305px;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 a {
+  text-decoration: none;
+  color: #000;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 {
+  margin: 10px auto;
+}
+.reportage .contenuReportage .reportage1 .vignetteReportage img {
+  width: 100%;
+  height: 100%;
+}
+.reportage .contenuReportage .reportage1 {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+/* Notre Selection */
+
+.notreSelection {
+  position: relative;
+  top: 6em;
+  background-color: rgb(230, 230, 230);
+}
+
+.notreSelection .infoSelection {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.notreSelection .infoSelection .selectInfoPrincipale {
+  margin-right: 50px;
+}
+
+.selectInfoPrincipale .titreInfoPrincipale h4 {
+  text-decoration: none;
+  font-size: 2.2em;
+  color: #000;
+  font-weight: bold;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.selectInfoPrincipale .titreInfoPrincipale {
+  margin: 15px auto;
+}
+
+.notreSelection
+  .infoSelection
+  .selectInfoPrincipale
+  .vignetteSelectInfoPrincipale {
+  width: 465px;
+  height: 260px;
+  cursor: pointer;
+}
+.notreSelection
+  .infoSelection
+  .selectInfoPrincipale
+  .vignetteSelectInfoPrincipale
+  img {
+  width: 100%;
+  height: 100%;
+}
+.notreSelection .infoSelection .selectInfoPrincipale .titreInfoPrincipale {
+  width: 465px;
+}
+.selectionHead {
+  padding: 30px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.selectInfo1 {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.notreSelection a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 15px;
+  color: #e2001a;
+  text-decoration: none;
+}
+
+.selectInfo1 .selectVignette {
+  position: relative;
+  width: 200px;
+  height: 110px;
+  cursor: pointer;
+}
+.selectInfo1 .selectVignette img {
+  width: 100%;
+  height: 100%;
+}
+
+.selectInfo1 .selectTitre {
+  position: relative;
+  left: 20px;
+  width: 260px;
+  cursor: pointer;
+}
+.selectInfoPrincipale .titreInfoPrincipale p span,
+.selectInfo1 .selectTitre p span {
+  text-transform: uppercase;
+  background-color: #e2001a;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 3px;
+  cursor: pointer;
+}
+.selectInfo1 .selectTitre p {
+  margin-bottom: 10px;
+}
+
+/* Reportage 2 */
+
+.reportage2 {
+  position: relative;
+  top: 9em;
+}
+
+.reportage2 .contenuReportage {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.titreReportage a {
+  text-decoration: none;
+  color: #000;
+}
+.titreReportage p a {
+  background-color: #e2001a;
+  color: #fff;
+  padding: 3px;
+}
+.titreReportage p {
+  margin: 15px auto;
+}
+
+.reportage2 .contenuReportage .reportage1 .vignetteReportage {
+  width: 305px;
+  height: 170px;
+}
+.reportage2 .contenuReportage .reportage1 .titreReportage {
+  width: 305px;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 a {
+  text-decoration: none;
+  color: #000;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 {
+  margin: 10px auto;
+}
+.reportage2 .contenuReportage .reportage1 .vignetteReportage img {
+  width: 100%;
+  height: 100%;
+}
+.reportage2 .contenuReportage .reportage1 {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+/* Podcasts */
+
+.podCasts {
+  position: relative;
+  top: 12em;
+  background-color: #2f2933;
+  color: #fff;
+}
+
+.podCasts .infoCan {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.podCasts .infoCan .podCastsfoPrincipale {
+  margin-right: 50px;
+}
+
+.podCastsfoPrincipale .titreInfoPrincipale a {
+  text-decoration: none;
+  font-size: 2.2em;
+  color: #fff;
+  font-weight: bold;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.podCastsfoPrincipale .titreInfoPrincipale {
+  margin: 15px auto;
+}
+
+.podCasts .infoCan .CanInfoPrincipale .vignetteInfoPrincipale {
+  width: 465px;
+  height: 260px;
+  cursor: pointer;
+}
+.podCasts .infoCan .podCastsfoPrincipale .vignetteInfoPrincipale img {
+  width: 100%;
+  height: 100%;
+}
+.podCasts .infoCan .podCastsfoPrincipale .titreInfoPrincipale {
+  width: 465px;
+}
+.canHead {
+  padding: 30px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.podCast1 {
+  position: relative;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.podCast1 .CanVignette {
+  position: relative;
+  width: 200px;
+  height: 110px;
+  cursor: pointer;
+}
+.podCast1 .CanVignette img {
+  width: 100%;
+  height: 100%;
+}
+
+.podCast1 .canTitre {
+  position: relative;
+  left: 20px;
+  width: 260px;
+  cursor: pointer;
+}
+.podCast1 .canTitre p span {
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.8em;
+  padding: 3px;
+  cursor: pointer;
+}
+.podCast1 .canTitre p {
+  margin-bottom: 10px;
+}
+
+/* Afrique */
+
+.Afrique {
+  position: relative;
+  top: 15em;
+}
+
+.Afrique .contenuReportage {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+
+
+.Afrique .contenuReportage .reportage1 .vignetteReportage {
+  width: 305px;
+  height: 170px;
+}
+.Afrique .contenuReportage .reportage1 .titreReportage {
+  width: 305px;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 a {
+  text-decoration: none;
+  color: #000;
+}
+.reportage .contenuReportage .reportage1 .titreReportage h4 {
+  margin: 10px auto;
+}
+.Afrique .contenuReportage .reportage1 .vignetteReportage img {
+  width: 100%;
+  height: 100%;
+}
+.Afrique .contenuReportage .reportage1 {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+/* Archives */
+
+.archives {
+  position: relative;
+  top: 20em;
+}
+
+.archives .titreArchie {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+.archives p {
+  position: absolute;
+  left: 13%;
+  margin-top: 15px;
+}
+
+.archives .datesArchives {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.archives .datesArchives li {
+  background-color: rgb(230, 230, 230);
+  margin: 10px;
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+.archives .datesArchives li:hover,
+.archives .datesArchives li:hover a {
+  background-color: #e2001a;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+.archives .datesArchives li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.archives .archivesDates {
+  position: relative;
+  top: 10px;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
